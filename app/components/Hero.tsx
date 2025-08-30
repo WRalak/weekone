@@ -15,8 +15,8 @@ export default function Hero() {
             Your Fitness Journey Starts Here
           </h1>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Whether you're ready to transform lives as a coach or transform your
-            own – we've got the perfect match waiting. Be among the first to
+            Whether you&apos;re ready to transform lives as a coach or transform your
+            own – we&apos;ve got the perfect match waiting. Be among the first to
             experience personalized coaching that fits your life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
