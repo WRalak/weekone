@@ -6,7 +6,8 @@ export default function InfoBar() {
       
       {/* Left lines */}
       <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2">
-        <Image src="/Vector 7.png" alt="line" width={40} height={80} />
+        <Image src="/Vector 4.png" alt="line" width={40} height={80} />
+          <Image src="/Vector 4.png" alt="line" width={40} height={80} />
       </div>
 
       {/* Middle section */}
@@ -47,7 +48,8 @@ export default function InfoBar() {
 
       {/* Right lines */}
       <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-        <Image src="/Vector 6.png" alt="line" width={40} height={80} />
+        <Image src="/Vector 8.png" alt="line" width={40} height={80} />
+        <Image src="/Vector 8.png" alt="line" width={40} height={80} />
       </div>
     </div>
   );

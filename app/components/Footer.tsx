@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-white text-gray-800 mt-20">
@@ -6,9 +9,15 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start">
           {/* Logo */}
           <div className="mb-7 md:mb-0">
-            <h1 className="text-2xl font-bold font-sans text-[32px] leading-[40px]">
-              week<span className="text-[#FE5A2F]">.one</span>
-            </h1>
+            <Link href="/" className="flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="logo"
+                  width={147}
+                  height={42}
+                  priority
+                />
+              </Link>
           </div>
 
           {/* Links */}
