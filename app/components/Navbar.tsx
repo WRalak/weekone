@@ -9,20 +9,21 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 left-0 w-full bg-white z-50">
-      <div className="max-w-8xl mx-auto py-4 px-4 sm:px-6 lg:px-10 xl:px-20">
+      {/* Constrained, centered container */}
+      <div className="max-w-[1214px] mx-auto py-4 px-4 sm:px-6 ">
         <div className="flex flex-col">
           {/* Top row: logo + navlinks + button */}
           <div className="flex justify-between items-center h-16">
             {/* Logo + Navlinks in one line */}
             <div className="flex items-center space-x-8">
               {/* Logo */}
-               <Link 
-              href={'/'} 
-              className="flex-shrink-0 text-[32px] font-black text-gray-900 leading-[130%] vertical-align-middle"
-              style={{ fontFamily: 'Nunito, sans-serif' }}
-            >
-              week<span className="text-[#FE5A2F]">.one</span>
-            </Link>
+              <Link
+                href={"/"}
+                className="flex-shrink-0 text-[32px] font-black text-gray-900 leading-[130%]"
+                style={{ fontFamily: "Nunito, sans-serif" }}
+              >
+                week<span className="text-[#FE5A2F]">.one</span>
+              </Link>
 
               {/* Desktop Navlinks */}
               <div className="hidden md:flex items-center space-x-6">
