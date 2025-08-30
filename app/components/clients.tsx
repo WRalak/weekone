@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <section className="w-full max-w-[1258px] mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-20 py-12 gap-10">
+    <section id="clients" className="w-full max-w-[1258px] mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-20 py-12 gap-10">
       
       {/* LEFT SIDE */}
       <div className="relative flex justify-center w-full md:w-1/2">

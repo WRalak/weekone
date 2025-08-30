@@ -3,30 +3,33 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-white px-6 lg:px-20 py-12">
+    <section className="w-full bg-white px-6 lg:px-10 xl:px-20 py-12">
       <div className="flex flex-col lg:flex-row items-center lg:justify-between relative">
         
         {/* Left Section */}
         <div className="max-w-lg text-center lg:text-left">
-          <p className="font-bold text-sm uppercase tracking-wide">
+          <p className="font-bold text-[#80959A]  text-sm uppercase tracking-wide">
             FITNESS WITHOUT LIMITS
           </p>
           <h1 className="text-3xl lg:text-5xl font-bold mt-4">
-            Your Fitness Journey Starts Here
+            Your Fitness <br /> Journey Starts <span className="text-[#FE5A2F]">Here</span>
           </h1>
           <p className="mt-4 text-gray-600 leading-relaxed">
             Whether you&apos;re ready to transform lives as a coach or transform your
-            own – we&apos;ve got the perfect match waiting. Be among the first to
-            experience personalized coaching that fits your life.
+            own – we&apos;ve got the perfect match waiting. </p>
+             <p className="mt-4 text-gray-600 leading-relaxed">Be among the first to
+            experience personalized coaching that <br /> fits your life.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
-              Join Waitlist
-            </button>
-            <button className="border border-orange-500 text-orange-500 px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 transition">
-              Founding Coach
-            </button>
-          </div>
+ <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
+  <button className="bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
+    Join Waitlist
+  </button>
+  <button className=" hidden sm:block border border-orange-500 text-orange-500 px-6 py-3  rounded-xl font-semibold hover:bg-orange-50 transition">
+    Founding Coach
+  </button>
+</div>
+
+
         </div>
 
         {/* Right Section */}

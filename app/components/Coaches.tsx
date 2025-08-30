@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CoachesSection() {
   return (
-    <section className="w-full bg-white py-10">
+    <section id="coaches" className="w-full bg-white py-10">
       <div className="container mx-auto md:px-20 px-4 flex flex-col md:flex-row items-center gap-8">
         {/* Left side */}
         <div className="flex-1 flex flex-col items-start gap-6">
