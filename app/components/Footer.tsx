@@ -34,8 +34,8 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-300 mt-6 pt-4">
           {/* Bottom Row */}
-          <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} week.one. All rights reserved.
+          <p className="text-sm text-bold text-gray-500">
+            © {new Date().getFullYear()} weekone. All rights reserved.
           </p>
         </div>
       </div>

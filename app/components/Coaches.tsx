@@ -2,16 +2,20 @@ import Image from "next/image";
 
 export default function CoachesSection() {
   return (
-    <section className="w-full flex justify-center px-10 py-12">
+    <section id="coaches" className="w-full flex justify-center px-10 py-12">
       <div className="max-w-[1251px] w-full flex flex-col lg:flex-row items-start gap-8">
         
         {/* Left side: Text + Images */}
         <div className="flex-1 flex flex-col w-full">
-          
-          {/* Text above left image */}
-          <h2 className="text-[16px] text-[#80959A] lg:px-20 font-bold text-center lg:text-left mb-6">
-            COACHES
-          </h2>
+        <div className="flex items-center w-full mb-6 lg:px-20 lg:block">
+  {/* HR only on mobile */}
+  <hr className="w-12 border-t border-gray-200 mr-3 lg:hidden" />
+  
+  <h2 className="text-sm sm:text-base md:text-lg lg:text-[16px] text-[#80959A] font-bold text-center lg:text-left">
+    COACHES
+  </h2>
+</div>
+
           
           {/* Two images below */}
           <div className="flex flex-col lg:flex-row gap-4 w-full relative">
@@ -50,8 +54,10 @@ export default function CoachesSection() {
 
           </div>
 
-          {/* Horizontal line below the images */}
-          <hr className="border-t border-gray-300 mt-8 w-full" />
+          <hr className="border-t border-gray-400 mt-8 w-full lg:w-auto" />
+
+
+
         </div>
       </div>
     </section>
