@@ -43,7 +43,7 @@ export default function Hero() {
       Join Waitlist
     </button>
     <button className="border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 transition hidden cursor-pointer  sm:block">
-      Finding Coach
+      Founding Coach
     </button>
   </div>
 </div>
