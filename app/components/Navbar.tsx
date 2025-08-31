@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="top-0 left-0 w-full bg-white z-50">
       {/* Constrained, centered container */}
-      <div className="max-w-[1214px] mx-auto py-4 px-4 sm:px-6">
+      <div className="max-w-[1214px] mx-auto py-4 px-6 sm:px-6">
         <div className="flex flex-col">
         {/* Top row: logo + navlinks + button */}
 <div className="flex justify-between items-center h-16">

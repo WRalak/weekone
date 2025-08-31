@@ -20,7 +20,7 @@ export default function CtaSection() {
   };
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 mt-10">
+    <div className="w-full px-6 sm:px-6 lg:px-8 mt-10">
       <section className="relative w-full max-w-[1214px] min-h-[280px] h-auto md:h-[280px] rounded-2xl overflow-hidden mx-auto">
         {/* Background image */}
         <Image
@@ -36,7 +36,7 @@ export default function CtaSection() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-center items-center md:items-start px-6 sm:px-10 lg:px-16 py-8 md:py-0 text-white text-center md:text-left">
-          <p className="font-nunito font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[70px] leading-tight mb-6">
+          <p className="font-nunito font-[800] font-black text-[32px] leading-[36px]   font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[70px] leading-tight mb-6">
             Your Fitness Journey Awaits
           </p>
 

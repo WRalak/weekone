@@ -22,7 +22,7 @@ export default function Hero() {
 
   </div>
 
-  <h1 className="text-5xl lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
+  <h1 className="text-5xl font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
     Your Fitness <br className="hidden lg:block" />
     Journey Starts <span className="text-[#FE5A2F]">Here</span>
   </h1>

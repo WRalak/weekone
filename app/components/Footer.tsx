@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-              <div className="flex flex-col text-gray-600 sm:flex-row sm:space-x-8 text-[17px] gap-8 sm:gap-0">
+              <div className="flex flex-col text-gray-600 sm:flex-row sm:space-x-8 text-[16px] gap-8 sm:gap-0">
             <a href="#privacy" className=" ">
               Privacy Policy
             </a>
