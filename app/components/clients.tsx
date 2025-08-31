@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <section
         id="clients"
-        className="w-full max-w-[1258px] mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-6 lg:px-20 py-12 gap-5"
+        className="w-full max-w-[1258px] mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-6 lg:px-20 py-12 gap-"
       >
         {/* LEFT SIDE - Phone */}
         <div className="relative flex justify-center w-full md:w-1/2">
@@ -23,8 +23,8 @@ export default function Page() {
 
         {/* RIGHT SIDE - Text */}
         <div className="flex flex-col items-center md:items-start w-full md:w-1/2 space-y-4 text-center md:text-left relative">
-            <div className="flex items-center w-full my-4 lg:hidden">
-<hr className="w-16 border-t border-gray-200 mr-2" />
+            <div className="flex items-center w-full my-4 ">
+<hr className="w-16 border-t border-gray-400 mr-2 lg:hidden" />
 
   <p className="text-sm font-semibold uppercase tracking-wide">
     CLIENTS
@@ -33,7 +33,7 @@ export default function Page() {
 
 
 
-          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-snug">
+          <h2 className="text-5xl md:text-5xl font-extrabold text-gray-900 leading-snug">
             Your Fitness Journey <br />
             <span className="text-[#FE5A2F]">Simplified</span>
           </h2>
@@ -44,7 +44,7 @@ export default function Page() {
             <li>Build lasting habits with trainers who keep you motivated and on track.</li>
           </ul>
 
-          <button className="mt-4 px-6 py-3 bg-[#FE5A2F] text-white rounded-xl font-semibold shadow hover:bg-[#e14e28] transition">
+          <button className="mt-4 cursor-pointer  px-6 py-3 bg-[#FE5A2F] text-white rounded-xl font-semibold shadow hover:bg-[#e14e28] transition">
             Secure Your Spot
           </button>
 

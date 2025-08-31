@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function InfoBar() {
   return (
-    <div className="relative w-full bg-[#FE5A2F] lg:h-[220px] flex flex-col lg:flex-row items-center justify-center px-6 py-10 lg:px-12">
+    <div className="relative w-full bg-[#FE5A2F] lg:h-[220px] flex flex-col lg:flex-row items-center justify-center px-6 py-8 lg:px-12">
       
       {/* Left lines on desktop */}
       <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2">
@@ -20,7 +20,7 @@ export default function InfoBar() {
         </div>
 
         {/* Divider on mobile */}
-      <hr className="border-t border-gray-300 w-full my-6 lg:hidden" />
+      <hr className="border-t border-orange-300 w-full my-6 lg:hidden" />
 
 
         {/* For Clients */}
@@ -31,7 +31,7 @@ export default function InfoBar() {
         </div>
 
         {/* Divider on mobile */}
-     <hr className="border-t border-gray-200 w-full my-6 lg:hidden" />
+     <hr className="border-t border-orange-300 w-full my-6 lg:hidden" />
 
 
         {/* For Everyone */}

@@ -9,7 +9,7 @@ export default function CoachesSection() {
         <div className="flex-1 flex flex-col w-full">
         <div className="flex items-center w-full mb-6 lg:px-20 lg:block">
   {/* HR only on mobile */}
-  <hr className="w-12 border-t border-gray-200 mr-3 lg:hidden" />
+  <hr className="w-12 border-t border-gray-400 mr-3 lg:hidden" />
   
   <h2 className="text-sm sm:text-base md:text-lg lg:text-[16px] text-[#80959A] font-bold text-center lg:text-left">
     COACHES
@@ -32,7 +32,7 @@ export default function CoachesSection() {
 
             {/* Connector image (visible only on small screens) */}
             <div className="relative block lg:hidden w-full h-[60px] flex justify-end items-center">
-              <div className="relative w-[80px] h-[60px] rotate-270">
+              <div className="relative w-[90px] h-[100px] rotate-270">
                 <Image
                   src="/Vector 14.png"
                   alt="Connector"

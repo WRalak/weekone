@@ -21,20 +21,21 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex flex-col sm:flex-row sm:space-x-8 text-sm gap-2 sm:gap-0">
+              <div className="flex flex-col text-gray-600 sm:flex-row sm:space-x-8 text-[17px] gap-8 sm:gap-0">
             <a href="#privacy" className=" ">
               Privacy Policy
             </a>
-            <a href="#terms" className="">
+            <a href="#terms" className=" ">
               Terms & Conditions
             </a>
           </div>
+
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-300 mt-6 pt-4">
           {/* Bottom Row */}
-          <p className="text-sm text-bold text-gray-500">
+          <p className="text-[17px] text-bold text-gray-500">
             © {new Date().getFullYear()} weekone. All rights reserved.
           </p>
         </div>
