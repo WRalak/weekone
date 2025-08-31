@@ -20,7 +20,7 @@ export default function Navbar() {
     {/* Logo */}
     <Link href="/" className="flex-shrink-0">
       <Image
-        src="/logo.png"
+        src="/Logo.png"
         alt="logo"
         width={147}
         height={42}

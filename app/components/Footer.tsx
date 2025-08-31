@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="mb-7 md:mb-0">
             <Link href="/" className="flex-shrink-0">
                 <Image
-                  src="/logo.png"
+                  src="/Logo.png"
                   alt="logo"
                   width={147}
                   height={42}
