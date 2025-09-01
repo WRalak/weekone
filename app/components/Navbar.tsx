@@ -10,14 +10,14 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 left-0 w-full bg-white z-50">
-      {/* Constrained, centered container */}
-      <div className="max-w-[1214px] mx-auto py-4 px-6 sm:px-6">
+    
+      <div className="max-w-[1214px] mx-auto py-4 px-6 lg:px- sm:px-6">
         <div className="flex flex-col">
-        {/* Top row: logo + navlinks + button */}
+       
 <div className="flex justify-between items-center h-16">
-  {/* Logo + Navlinks */}
+
   <div className="flex items-center space-x-8">
-    {/* Logo */}
+  
     <Link href="/" className="flex-shrink-0">
       <Image
         src="/Logo.png"
@@ -29,7 +29,7 @@ export default function Navbar() {
       />
     </Link>
 
-    {/* Desktop Navlinks */}
+  
     <div className="hidden md:flex items-center space-x-6">
       <a href="#clients" className="text-gray-600 text-[17px] font-bold cursor-pointer ">
         For Clients
@@ -40,14 +40,14 @@ export default function Navbar() {
     </div>
   </div>
 
-  {/* Right CTA Button */}
+ 
   <div className="hidden md:flex items-center">
     <button className="bg-[#FE5A2F] text-white px-6 py-2.5 rounded-2xl cursor-pointer  font-medium">
       Get early access
     </button>
   </div>
 
-  {/* Mobile Hamburger */}
+ 
   <div className="md:hidden flex items-center">
     <button
       onClick={() => setIsOpen(!isOpen)}
@@ -59,8 +59,8 @@ export default function Navbar() {
 </div>
 
 
-          {/* HR under entire row */}
-          <hr className="hidden lg:block border-[1px] border-gray-300 mt-5" />
+        
+          <hr className=" border-[1px] border-gray-300 mt-5" />
         </div>
       </div>
 

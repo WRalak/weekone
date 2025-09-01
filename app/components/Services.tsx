@@ -42,11 +42,9 @@ export default function InfoBar() {
         </div>
       </div>
 
-      {/* Right lines on desktop */}
-      <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-        <Image src="/Vector 8.png" alt="line" width={40} height={80} />
-        <Image src="/Vector 8.png" alt="line" width={40} height={80} />
-      </div>
+<div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2"> <Image src="/Vector 8.png" alt="line" width={40} height={80} /> <Image src="/Vector 8.png" alt="line" width={40} height={80} /> </div>
+
+      
     </div>
   );
 }

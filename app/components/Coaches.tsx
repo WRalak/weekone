@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CoachesSection() {
   return (
-    <section id="coaches" className="w-full flex justify-center px-10 py-12">
+    <section id="coaches" className="w-full flex justify-center px-20 py-12">
       <div className="max-w-[1251px] w-full flex flex-col lg:flex-row items-start gap-8">
         
         {/* Left side: Text + Images */}
