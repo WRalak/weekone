@@ -23,7 +23,7 @@ export default function CoachesSection() {
             {/* First image */}
             <div className="relative w-full lg:flex-1 aspect-[4/3]">
               <Image
-                src="/Purchase Text.png"
+                src="/Purchase.png"
                 alt="Coach 1"
                 fill
                 className="object-cover rounded-xl"
@@ -63,3 +63,4 @@ export default function CoachesSection() {
     </section>
   );
 }
+

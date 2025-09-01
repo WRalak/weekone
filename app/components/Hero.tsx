@@ -16,18 +16,18 @@ export default function Hero() {
             </p>
           </div>
 
-          <h1 className="text-4xl font-bold font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
+          <h1 className="text-[45px] font-bold font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
             Your Fitness <br className="hidden lg:block" />
             Journey Starts <span className="text-[#FE5A2F]">Here</span>
           </h1>
 
           {/* Paragraphs */}
-          <p className="mt-4 text-gray-600 leading-relaxed hidden md:block">
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed hidden md:block">
             Whether you&apos;re ready to transform lives as a coach or <br /> transform your
             own – we&apos;ve got the perfect match waiting.
           </p>
 
-          <p className="mt-4 text-[18px] text-gray-600 leading-relaxed"> 
+          <p className="mt-4 text-sm text-gray-600 leading-relaxed"> 
             Be among the first to experience personalized coaching that 
             <br className="hidden sm:block" /> fits your life.
           </p>

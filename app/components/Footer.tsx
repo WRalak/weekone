@@ -4,38 +4,37 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-white text-gray-800 mt-20">
-      <div className="max-w-7xl mx-auto px-6 sm:px- lg:px- py-8">
+      <div className="max-w-7xl mx-auto px-6  lg:px-20 py-8">
         {/* Top Row */}
-        <div className="flex flex-col md:flex-row justify-between items-start">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Logo */}
-          <div className="mb-7 md:mb-0">
+          <div className="mb-6 md:mb-0">
             <Link href="/" className="flex-shrink-0">
-                <Image
-                  src="/Logo.png"
-                  alt="logo"
-                  width={147}
-                  height={42}
-                  priority
-                />
-              </Link>
+              <Image
+                src="/Logo.png"
+                alt="logo"
+                width={147}
+                height={42}
+                priority
+              />
+            </Link>
           </div>
 
           {/* Links */}
-              <div className="flex flex-col text-gray-600 sm:flex-row sm:space-x-8 text-[16px] gap-8 sm:gap-0">
-            <a href="#privacy" className=" ">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-gray-600">
+            <a href="#privacy" className="hover:text-gray-800 transition-colors">
               Privacy Policy
             </a>
-            <a href="#terms" className=" ">
+            <a href="#terms" className="hover:text-gray-800 transition-colors">
               Terms & Conditions
             </a>
           </div>
-
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-300 mt-6 pt-4">
+        <div className="border-t border-gray-300 mt-6 pt-6">
           {/* Bottom Row */}
-          <p className="text-[17px] text-bold text-gray-500">
+          <p className="text-sm font-medium text-gray-500 text-center md:text-left">
             © {new Date().getFullYear()} weekone. All rights reserved.
           </p>
         </div>
