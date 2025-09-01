@@ -31,7 +31,7 @@ export default function Page() {
 
 
 
-          <h2 className="text-5xl md:text-5xl font-extrabold text-gray-900 leading-snug">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
             Your Fitness Journey <br />
             <span className="text-[#FE5A2F]">Simplified</span>
           </h2>
