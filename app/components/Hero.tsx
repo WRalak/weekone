@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-white lg:mb-20 px-6 lg:px-20 xl:px-20 py-4">
+    <section className="w-full bg-white mb-20 lg:mb-20 px-6 lg:px-20 xl:px-20 ">
       <div className="max-w-[1214px] mx-auto flex flex-col lg:flex-row items-center lg:justify-between relative">
         
         {/* Left Section - Centered on small screens */}
@@ -16,7 +16,7 @@ export default function Hero() {
             </p>
           </div>
 
-                <h1 className="md:text-[48px] text-[48px] font-bold font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
+                <h1 className="md:text-[60px] text-[60px] font-bold font-nunito lg:text-[60px] font-bold mt-4 leading-tight lg:leading-[1.1]">
             Your Fitness <br className="hidden lg:block" />
             Journey Starts <span className="text-[#FE5A2F]">Here</span>
           </h1>
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Right Section */}
-        <div className="relative mt-10 lg:mt-0 w-full lg:w-[680px] h-[607px] sm:h-[500px] flex justify-center">
+        <div className="relative  lg:mt-0 w-full lg:w-[680px] h-[607px] sm:h-[500px] flex justify-center">
           <Image
             src="/Hero.png"
             alt="Phone"

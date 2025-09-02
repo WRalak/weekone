@@ -32,7 +32,7 @@ export default function Page() {
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl  md:text-5xl font-extrabold leading-tight text-gray-900">
+          <h2 className="text-4xl  md:text-5xl font-bold leading-tight text-gray-900">
             Your Fitness Journey <br />
             <span className="text-[#FE5A2F]">Simplified</span>
           </h2>

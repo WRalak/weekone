@@ -33,11 +33,11 @@ export default function Dashboard() {
       <div className="flex-1">
         {/* Heading */}
         <div className="flex items-center gap-3 mb-6">
-          <hr className="hidden md:block w-12 border-t-2 border-gray-400" />
+          <hr className=" md:block w-12 border-t-2 border-gray-400" />
           <p className="text-gray-700 font-medium tracking-wide">COACHES</p>
         </div>
 
-        <h1 className="text-[40px] md:text-[51px] font-black leading-snug">
+        <h1 className="text-[45px] md:text-[51px] font-black leading-snug">
           Get Paid On Time, <br />
           <span className="text-[#FE5A2F]">Every Time</span>
         </h1>
