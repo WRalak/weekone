@@ -14,9 +14,9 @@ export default function InfoBar() {
       <div className="w-full max-w-[1214px] flex flex-col lg:grid lg:grid-cols-3 text-center text-white gap-6 lg:gap-10">
         {/* For Coaches */}
         <div className="flex flex-col items-center">
-          <Image src="/coaches.png" alt="Coaches" width={50} height={50} />
-          <p className="font-bold mt-3 text-lg">For Coaches</p>
-          <p className="text-sm opacity-90">Build your global practice</p>
+          <Image src="/coaches.png" alt="Coaches" width={96} height={96} />
+          <p className="font-bold mt-3 text-sm md:text-[18px]">For Coaches</p>
+          <p className="text-sm md:text-[18px] opacity-90">Build your global practice</p>
         </div>
 
         {/* Divider on mobile */}
@@ -25,9 +25,9 @@ export default function InfoBar() {
 
         {/* For Clients */}
         <div className="flex flex-col items-center">
-          <Image src="/clients.png" alt="Clients" width={50} height={50} />
-          <p className="font-bold mt-3 text-lg">For Clients</p>
-          <p className="text-sm opacity-90">Find your perfect match</p>
+          <Image src="/clients.png" alt="Clients" width={96} height={96} />
+          <p className="font-bold text-sm md:text-[18px] mt-3 ">For Clients</p>
+          <p className="text-sm md:text-[18px] opacity-90">Find your perfect match</p>
         </div>
 
         {/* Divider on mobile */}
@@ -36,13 +36,14 @@ export default function InfoBar() {
 
         {/* For Everyone */}
         <div className="flex flex-col items-center">
-          <Image src="/people.png" alt="Everyone" width={50} height={50} />
-          <p className="font-bold mt-3 text-lg">For Everyone</p>
-          <p className="text-sm opacity-90">Fitness made personal</p>
+          <Image src="/people.png" alt="Everyone" width={96} height={96} />
+          <p className="font-bold mt-3 text-sm  md:text-[18px]">For Everyone</p>
+          <p className="text-sm md:text-[18px] opacity-90">Fitness made personal</p>
         </div>
       </div>
 
-<div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2"> <Image src="/Vector 8.png" alt="line" width={40} height={80} /> <Image src="/Vector 8.png" alt="line" width={40} height={80} /> </div>
+<div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2"> <Image src="/Vector 8.png" alt="line" width={40} height={80} /> 
+<Image src="/Vector 8.png" alt="line" width={40} height={80} /> </div>
 
       
     </div>

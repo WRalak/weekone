@@ -36,7 +36,7 @@ export default function CtaSection() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-center items-center md:items-start px-6 sm:px-10 lg:px-16 py-8 md:py-0 text-white text-center md:text-left">
-          <p className="font-nunito font-[800]  text-[32px] leading-[36px]   font-extrabold sm:text-5xl md:text-6xl lg:text-[70px] leading-tight mb-6">
+          <p className="font-nunito font-[800]  text-[32px] leading-[36px]  leading-tight   font-extrabold sm:text-5xl md:text-6xl lg:text-[70px]  mb-6">
             Your Fitness Journey Awaits
           </p>
 

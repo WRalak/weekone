@@ -7,27 +7,27 @@ export default function Hero() {
       <div className="max-w-[1214px] mx-auto flex flex-col lg:flex-row items-center lg:justify-between relative">
         
         {/* Left Section - Centered on small screens */}
-        <div className="flex flex-col items-center lg:items-start w-full lg:w-[50%] text-center lg:text-left">
-          <div className="flex items-center justify-center lg:justify-start w-full mb-4">
+        <div className="flex flex-col mt-6  items-center lg:items-start w-full lg:w-[50%] text-center lg:text-left">
+          <div className="flex items-center justify-center lg:justify-start w-full mb-">
             {/* HR only on mobile */}
-            <hr className="w-12 border-t border-gray-400 mr-3 lg:hidden" />
+            <hr className="w-12 border-t border-gray-400 mr-3 lg:" />
             <p className="font-bold text-[#80959A] text-sm uppercase tracking-wide">
               FITNESS WITHOUT LIMITS
             </p>
           </div>
 
-          <h1 className="text-[45px] font-bold font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
+                <h1 className="md:text-[48px] text-[48px] font-bold font-nunito lg:text-[53px] font-bold mt-4 leading-tight lg:leading-[1.1]">
             Your Fitness <br className="hidden lg:block" />
             Journey Starts <span className="text-[#FE5A2F]">Here</span>
           </h1>
 
           {/* Paragraphs */}
-          <p className="mt-4 text-gray-600 text-sm leading-relaxed hidden md:block">
+          <p className="mt-4 text-gray-600 text-[18px] leading-relaxed hidden md:block">
             Whether you&apos;re ready to transform lives as a coach or <br /> transform your
             own – we&apos;ve got the perfect match waiting.
           </p>
 
-          <p className="mt-4 text-sm text-gray-600 leading-relaxed"> 
+          <p className="mt-2 text-sm md:text-[18px] text-gray-600 leading-relaxed"> 
             Be among the first to experience personalized coaching that 
             <br className="hidden sm:block" /> fits your life.
           </p>
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Right Section */}
-        <div className="relative mt-10 lg:mt-0 w-full lg:w-[680px] h-[400px] sm:h-[500px] flex justify-center">
+        <div className="relative mt-10 lg:mt-0 w-full lg:w-[680px] h-[607px] sm:h-[500px] flex justify-center">
           <Image
             src="/Hero.png"
             alt="Phone"

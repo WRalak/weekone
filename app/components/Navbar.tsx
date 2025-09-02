@@ -31,10 +31,10 @@ export default function Navbar() {
 
   
     <div className="hidden md:flex items-center space-x-6">
-      <a href="#clients" className="text-gray-600 text-[17px] font-bold cursor-pointer ">
+      <a href="#clients" className="text-gray-600 text-[18px]  cursor-pointer ">
         For Clients
       </a>
-      <a href="#coaches" className="text-gray-600 text-[17px] font-bold cursor-pointer ">
+      <a href="#coaches" className="text-gray-600 text-[18px]  cursor-pointer ">
         For Coaches
       </a>
     </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
 
  
   <div className="hidden md:flex items-center">
-    <button className="bg-[#FE5A2F] text-white px-6 py-2.5 rounded-2xl cursor-pointer  font-medium">
+    <button className="bg-[#FE5A2F] text-white px-6 py-4 rounded-2xl cursor-pointer  font-medium">
       Get early access
     </button>
   </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
 
         
-          <hr className=" border-[1px] border-gray-300 mt-5" />
+          <hr className=" border-[1px] border-gray-200 mt-5" />
         </div>
       </div>
 
