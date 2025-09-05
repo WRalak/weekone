@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-// Load Nunito Sans
-const nunito = Nunito_Sans({
+// Load Nunito variable font
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+});
+
+// Load Nunito Sans variable font
+const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // adjust weights you need
 });
 
 export const metadata: Metadata = {
@@ -21,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} antialiased`}>
+      <body className={`${nunito.variable} ${nunitoSans.variable} antialiased`}>
         {children}
       </body>
     </html>

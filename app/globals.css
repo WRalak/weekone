@@ -1,13 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-
 @import "tailwindcss";
 
-:root {
-  --font-nunito-sans: 'Nunito Sans', sans-serif;
+@theme inline {
+  --font-nunito: var(--font-nunito);
+  --font-nunito-sans: var(--font-nunito-sans);
+  --font-sans: var(--font-nunito-sans);
 }
 
 body {
   font-family: var(--font-nunito-sans), sans-serif;
+}
+
+h1 {
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.hero-pretext {
+  font-family: var(--font-nunito), sans-serif !important;
 }
 
 
