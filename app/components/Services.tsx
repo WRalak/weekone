@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function InfoBar() {
   return (
-    <div className="relative w-full bg-[#FE5A2F] lg:h-[220px] flex flex-col lg:flex-row items-center justify-center px-6 py-8 lg:px-12">
+    <div className="relative w-full bg-[#FE5A2F] lg:h-[220px] flex flex-col lg:flex-row items-center justify-center py-10 lg:py-0 gap-6 lg:gap-10">
       
       {/* Left lines on desktop */}
       <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2">

@@ -28,7 +28,7 @@ export default function Dashboard() {
   ];
 
   return (
-    <section className="w-full max-w-[1250px] mx-auto flex flex-col lg:flex-row lg:items-start justify-between px-4 lg:px-20 xl:px-6 py-12 gap-10 lg:gap-16">
+    <section className="w-full max-w-[1250px] mx-auto flex flex-col lg:flex-row lg:items-start justify-between px-6  py-12 gap-10 lg:gap-16">
       {/* LEFT SIDE */}
       <div className="flex-1">
         {/* Heading */}

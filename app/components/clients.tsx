@@ -25,28 +25,28 @@ export default function Page() {
         <div className="flex flex-col items-center md:items-start w-full md:w-1/2 space-y-4 text-center md:text-left relative">
           {/* Heading label */}
           <div className="flex items-center w-full my-2 md:my-0 justify-center md:justify-start">
-            <hr className="w-12 border-t border-gray-400 mr-2 lg:hidden" />
+            <hr className="w-12 border-t border-gray-400 mr-2 " />
             <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
               CLIENTS
             </p>
           </div>
 
           {/* Title */}
-          <h2 className="text-4xl  md:text-5xl font-bold leading-tight text-gray-900">
+          <h1 className="mt-5 text-5xl font-black  leading-snug tracking-tight text-pretty text-gray-900">
             Your Fitness Journey <br />
-            <span className="text-[#FE5A2F]">Simplified</span>
-          </h2>
+            <span className="text-[#FE5A2F] ">Simplified</span>
+          </h1>
 
          {/* Bullet Points */}
 <ul className="text-base text-sm md:text-[18px] text-gray-600 space-y-3 mt-4 list-disc pl-6">
   <li>
-    Discover certified trainers who match your goals and schedule.
+    Discover certified trainers who match your goals and <br /> schedule.
   </li>
   <li>
-    Book sessions that fit your busy lifestyle – anytime, anywhere.
+    Book sessions that fit your busy lifestyle – anytime,<br /> anywhere.
   </li>
   <li>
-    Build lasting habits with trainers who keep you motivated and on track.
+    Build lasting habits with trainers who keep you <br /> motivated and on track.
   </li>
 </ul>
 

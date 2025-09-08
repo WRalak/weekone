@@ -1,91 +1,97 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { FiX } from "react-icons/fi";
-import { RiMenu3Line } from "react-icons/ri";
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Cancel01Icon, Menu11Icon } from '@hugeicons-pro/core-twotone-rounded'
+import { HugeiconsIcon } from '@hugeicons/react'
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+interface Link {
+  name: string
+  href: string
+}
 
+const links: Link[] = [
+  { name: "For clients", href: "/#" },
+  { name: "For coaches", href: "/#" }
+]
+
+export const Navbar = () => {
   return (
-    <nav className="top-0 left-0 w-full bg-white z-50">
-    
-      <div className="max-w-[1214px] mx-auto py-4 px-6 lg:px- sm:px-6">
-        <div className="flex flex-col">
-       
-<div className="flex justify-between items-center h-16">
+    <Disclosure as="nav" className="relative bg-white">
+      <div className="mx-auto max-w-7xl px-4  border-b border-gray-200 py-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 justify-between">
+          {/* Left side: Logo + Links */}
+          <div className="flex">
+            {/* Logo */}
+            <div className="flex shrink-0 items-center">
+              <img
+                alt="Your Company"
+                src="Logo.svg"
+                className="h-8 w-auto"
+              />
+            </div>
 
-  <div className="flex items-center space-x-8">
-  
-    <Link href="/" className="flex-shrink-0">
-      <Image
-        src="/Logo.png"
-        alt="logo"
-        width={147}
-        height={42}
-        priority
-        className="block"
-      />
-    </Link>
+            {/* Desktop links */}
+            <div className="hidden md:ml-6 md:flex md:space-x-8">
+              {links.map((link, index) => (
+                <a
+                  key={`${link.name}-${index}`}
+                  href={link.href}
+                  className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-[18px] font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
 
-  
-    <div className="hidden md:flex items-center space-x-6">
-      <a href="#clients" className="text-gray-600 text-[18px]  cursor-pointer ">
-        For Clients
-      </a>
-      <a href="#coaches" className="text-gray-600 text-[18px]  cursor-pointer ">
-        For Coaches
-      </a>
-    </div>
-  </div>
+          {/* Right side: CTA + Mobile menu */}
+          <div className="flex items-center gap-2.5">
+            {/* CTA button (desktop only) */}
+            <div className="shrink-0">
+              <button
+                type="button"
+                className="hidden sm:block relative items-center gap-x-1.5 rounded-xl bg-[#FE5A2F] px-4 py-3 text-[18px] font-semibold text-white hover:bg-[#FE5A2F]/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FE5A2F] capitalize cursor-pointer"
+              >
+                Get early access
+              </button>
+            </div>
 
- 
-  <div className="hidden md:flex items-center">
-    <button className="bg-[#FE5A2F] text-white px-6 py-4 rounded-2xl cursor-pointer  font-medium">
-      Get early access
-    </button>
-  </div>
-
- 
-  <div className="md:hidden flex items-center">
-    <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="text-gray-800 focus:outline-none"
-    >
-      {isOpen ? <FiX size={28} /> : <RiMenu3Line size={28} />}
-    </button>
-  </div>
-</div>
-
-
-        
-          <hr className=" border-[1px] border-gray-200 mt-5" />
+            {/* Mobile menu button */}
+            <div className="flex items-center md:hidden">
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-800 ">
+                <span className="absolute -inset-0.5" />
+                <span className="sr-only">Open main menu</span>
+                <HugeiconsIcon icon={Menu11Icon} className="block size-8 group-data-open:hidden" />
+                <HugeiconsIcon icon={Cancel01Icon} className="hidden size-8 group-data-open:block" />
+              </DisclosureButton>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-lg px-4 pt-2 pb-4 space-y-4">
-          <a
-            href="#clients"
-            className="block text-gray-800"
-            onClick={() => setIsOpen(false)}
-          >
-            For Clients
-          </a>
-          <a
-            href="#coaches"
-            className="block text-gray-800"
-            onClick={() => setIsOpen(false)}
-          >
-            For Coaches
-          </a>
-          <button className="w-full bg-[#FE5A2F] text-white px-4 py-2 rounded-lg font-medium">
-            Get early access
-          </button>
+      {/* Mobile menu content */}
+      <DisclosurePanel className="md:hidden">
+        <div className="space-y-1 pt-2 pb-3">
+          {links.map((link, index) => (
+            <DisclosureButton
+              key={`${link.name}-${index}`}
+              as="a"
+              href={link.href}
+              className="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800 sm:pr-6 sm:pl-5"
+            >
+              {link.name}
+            </DisclosureButton>
+          ))}
+
+          {/* CTA inside mobile menu */}
+          <div className="mt-3 px-3">
+            <button
+              type="button"
+              className="w-full rounded-xl bg-[#FE5A2F] px-4 py-3 text-sm font-semibold text-white hover:bg-[#FE5A2F]/80 "
+            >
+              Get early access
+            </button>
+          </div>
         </div>
-      )}
-    </nav>
-  );
+      </DisclosurePanel>
+    </Disclosure>
+  )
 }
