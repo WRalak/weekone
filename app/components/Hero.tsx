@@ -1,17 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
+import Image from 'next/image'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 export const Hero = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [] = useState(false)
 
   return (
     <div className="bg-white">
@@ -20,7 +14,7 @@ export const Hero = () => {
           <div className="mx-auto max-w-xl lg:mx-0 lg:flex-auto">
             <div className="flex">
               <div className="relative flex items-center gap-x-4 bg-white text-sm/6 text-gray-600 ">
-                <img src="dash.svg" alt="" />
+              <Image src="dash.svg" alt="hero" width={20} height={20} />
                 <a href="#" className="flex items-center gap-x-1 font-extrabold text-[#80959A] uppercase">
                   <span aria-hidden="true" className="absolute inset-0" />
                   FITNESS WITHOUT LIMITS
@@ -54,7 +48,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-            <img alt="" src="app-screenshot.svg" className="w-full h-full object-contain" />
+            <Image alt="" src="app-screenshot.svg" className="w-full h-full object-contain" width={500} height={500} />
           </div>
         </div>
       </div>

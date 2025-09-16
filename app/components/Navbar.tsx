@@ -1,4 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import Image from 'next/image'
 import { Cancel01Icon, Menu11Icon } from '@hugeicons-pro/core-twotone-rounded'
 import { HugeiconsIcon } from '@hugeicons/react'
 
@@ -21,10 +22,12 @@ export const Navbar = () => {
           <div className="flex">
             {/* Logo */}
             <div className="flex shrink-0 items-center">
-              <img
+              <Image
                 alt="Your Company"
                 src="Logo.svg"
-                className="h-8 w-auto"
+                className=""
+                width={147}
+                height={42}
               />
             </div>
 
@@ -34,7 +37,7 @@ export const Navbar = () => {
                 <a
                   key={`${link.name}-${index}`}
                   href={link.href}
-                  className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-[18px] font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-[18px] font-medium text-gray-500 "
                 >
                   {link.name}
                 </a>

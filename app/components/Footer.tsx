@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-[18px] text-gray-600">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-[16px] text-gray-600">
             <a href="#privacy" className="hover:text-gray-800 transition-colors">
               Privacy Policy
             </a>
